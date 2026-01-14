@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ปริศนาแห่งพยูน</title>
+</head>
+<body style="text-align: center; padding-top: 50px; background-color: #f0f0f0;">
+
+    <h1>ปริศนาแห่งพยูน Level 1</h1>
+    <p>จงไขรหัส: "สัตว์ที่มีกระดอง เดินช้าๆ" (ตอบเป็นภาษาอังกฤษ)</p>
+    
+    <input type="text" id="pass" placeholder="ใส่คำตอบ...">
+    <button onclick="check()">ไปต่อ</button>
+
+    <script>
+        function check() {
+            let val = document.getElementById("pass").value;
+            val = val.toLowerCase().trim(); // แปลงเป็นตัวเล็ก + ตัดช่องว่าง
+            window.location.href = val + ".html"; // สั่งให้ไปที่ ไฟล์คำตอบ.html
+        }
+    </script>
+
+</body>
+</html>
