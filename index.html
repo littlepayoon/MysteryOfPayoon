@@ -1,24 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>ปริศนาแห่งพยูน</title>
-</head>
-<body style="text-align: center; padding-top: 50px; background-color: #f0f0f0;">
-
-    <h1>ปริศนาแห่งพยูน Level 1</h1>
-    <p>จงไขรหัส: "สัตว์ที่มีกระดอง เดินช้าๆ" (ตอบเป็นภาษาอังกฤษ)</p>
-    
-    <input type="text" id="pass" placeholder="ใส่คำตอบ...">
-    <button onclick="check()">ไปต่อ</button>
-
-    <script>
-        function check() {
-            let val = document.getElementById("pass").value;
-            val = val.toLowerCase().trim(); // แปลงเป็นตัวเล็ก + ตัดช่องว่าง
-            window.location.href = val + ".html"; // สั่งให้ไปที่ ไฟล์คำตอบ.html
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ปริศนาแห่งพยูน - The Mystery of Payoon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kanit', sans-serif;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); /* พื้นหลังไล่สีน้ำทะเลลึก */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
         }
-    </script>
+
+        .container {
+            background: rgba(255, 255, 255, 0.1); /* พื้นหลังโปร่งแสง */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 600px;
+            width: 90%;
+            backdrop-filter: blur(10px); /* เอฟเฟกต์เบลอพื้นหลัง */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00d2ff; /* ตัวหนังสือเรืองแสง */
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+
+        .highlight {
+            color: #00d2ff;
+            font-weight: bold;
+        }
+
+        .btn-start {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+        }
+
+        .btn-start:hover {
+            transform: scale(1.05); /* ขยายเมื่อเอาเมาส์ชี้ */
+            box-shadow: 0 10px 20px rgba(0, 210, 255, 0.6);
+        }
+        
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ปริศนาแห่งพยูน</h1>
+        
+        <p>
+            ยินดีต้อนรับผู้กล้าเข้าสู่อาณาจักรแห่งความลับ<br>
+            เกมนี้มีทั้งหมด <span class="highlight">5 ด่าน</span><br>
+            รหัสผ่านของทุกด่านจะเป็น <span class="highlight">เลข 4 หลัก</span>
+        </p>
+        
+        <p>จงใช้สติปัญญาและการสังเกต เพื่อไขรหัสลับ<br>ขอเชิญทุกท่านสนุกไปกับเกมนี้...</p>
+
+        <a href="level1.html" class="btn-start">เริ่มเกม</a>
+        
+        <div class="footer">สร้างสรรค์โดย คุณพยูน</div>
+    </div>
 
 </body>
 </html>
