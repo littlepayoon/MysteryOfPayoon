@@ -15,7 +15,6 @@
 <body>
     <h1>Level 3</h1>
     <img src="stage03.jpg" width="500">
-    <p>ก้มดูสิ่งที่อยู่ตรงหน้าเจ้า... แล้วมองขึ้นไป (4 หลัก)</p>
     <input type="text" id="ans">
     <button onclick="check()">ไปต่อ</button>
 
@@ -23,7 +22,7 @@
         function check() {
             if (document.getElementById("ans").value.trim() === "0741") {
                 window.location.href = "0741.html";
-            } else { alert("ผิด! ลองดูที่ Numpad หรือแป้นตัวเลขสิ"); }
+            } else { alert("ยังไม่ถูกจ้า!"); }
         }
     </script>
 </body>
