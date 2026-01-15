@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #1a1a1a; color: white; font-family: 'Kanit', sans-serif; text-align: center; padding-top: 50px; }
+        img { max-width: 100%; border: 5px solid #fff; border-radius: 10px; margin-bottom: 20px; }
+        input { padding: 10px; font-size: 18px; text-align: center; }
+        button { padding: 10px 20px; font-size: 18px; background-color: #2ECC40; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Level 3</h1>
+    <img src="stage03.jpg" width="500">
+    <p>ก้มดูสิ่งที่อยู่ตรงหน้าเจ้า... แล้วมองขึ้นไป (4 หลัก)</p>
+    <input type="text" id="ans">
+    <button onclick="check()">ไปต่อ</button>
+
+    <script>
+        function check() {
+            if (document.getElementById("ans").value.trim() === "0741") {
+                window.location.href = "0741.html";
+            } else { alert("ผิด! ลองดูที่ Numpad หรือแป้นตัวเลขสิ"); }
+        }
+    </script>
+</body>
+</html>
