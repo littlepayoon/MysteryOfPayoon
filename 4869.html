@@ -51,8 +51,6 @@
     
     <img src="stage02.jpg" width="500" alt="ปริศนาด่าน 2">
     
-    <p>บางครั้ง... การมองโลกในมุมกลับ ก็ทำให้เห็นความจริง (4 หลัก)</p>
-
     <input type="text" id="ans" placeholder="รหัสผ่าน...">
     <button onclick="checkAnswer()">ไปต่อ</button>
 
@@ -64,7 +62,7 @@
             if (val === "3045") {
                 window.location.href = "3045.html"; // ไปด่าน 3
             } else {
-                alert("ผิด! ลองกลับหัวดูสิ...");
+                alert("ยังไม่ถูกจ้า!");
                 document.getElementById("ans").value = "";
             }
         }
