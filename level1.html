@@ -52,8 +52,6 @@
     
     <img src="stage01.jpg" width="500" alt="คำใบ้ปริศนา">
     
-    <p>จงไขรหัสลับจากภาพนี้... (ตัวเลข 4 หลัก)</p>
-
     <input type="text" id="ans" placeholder="กรอกรหัสที่นี่...">
     <button onclick="checkAnswer()">ตรวจสอบ</button>
 
@@ -65,7 +63,7 @@
             if (val === "4869") {
                 window.location.href = "4869.html"; // ไปด่าน 2
             } else {
-                alert("ผิด! ลองสังเกตชื่อยาดูดีๆ สิ");
+                alert("ยังไม่ถูกจ้า");
                 document.getElementById("ans").value = ""; // ล้างช่องคำตอบ
             }
         }
